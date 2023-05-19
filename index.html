@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #administradores h2,
+    #votar h2,
+    #redes-sociales h2,
+    #motomami h2 {
+      text-align: center;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#administradores">ADMINISTRADORES</a></li>
+        <li><a href="#votar">VOTAR</a></li>
+        <li><a href="#redes-sociales">REDES SOCIALES</a></li>
+        <li><a href="#motomami">MOTOMAMI</a></li>
+        <li><a href="#votos-en-tiempo-real">VOTOS EN TIEMPO REAL</a></li>
+
+      </ul>
+    </nav>
+    <a href="https://chat.whatsapp.com/HQi4vOX62V39VYYaOif0uM" class="join-button">¡Únete a nosotros!</a>
+  </header>
+  
+  <section id="inicio" class="section-content">
+    <div class="intro">
+      <h1 class="animation centered" style="background-color: rgba(255, 255, 255, 0.7);">Ángeles</h1>
+      <p class="animation centered" style="background-color: rgba(255, 255, 255, 0.7);">
+        No puedes 
+        <span class="red-text">JODER</span> con una <span class="red-text">MOTOMAMI</span>
+      </p>
+    </div>
+    <div class="video-container">
+      <!-- Aquí puedes insertar el código del reproductor de vídeo de YouTube -->
+      <!-- Por ejemplo: -->
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+  </section>
+  
+  
+  
+  <section id="administradores" class="section-content">
+    <h2>Administradores</h2>
+    <div class="admin-images">
+      <div class="admin">
+        <img src="images/Polar.jpeg" alt="Polar">
+        <p>Polar</p>
+      </div>
+      <div class="admin">
+        <img src="images/Skipper2.jpeg" alt="Skipper">
+        <p>Skipper</p>
+      </div>
+      <div class="admin">
+        <img src="images/Dillan.jpeg" alt="Dillan">
+        <p>Dillan</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="votar" class="section-content">
+    <h2>Votar</h2>
+    <div class="candidates">
+      <div class="candidate">
+        <img src="images/nicc.jpeg" alt="Nicc">
+        <p>Nicc</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/Jhonatan.jpeg" alt="Jhonatan Javier">
+        <p>Jhonatan Javier</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/Jordan.jpeg" alt="Jordan Ramirez">
+        <p>Jordan Ramirez</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/nopic.jpeg" alt="Kristell">
+        <p>Kristell</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/LuisFernando.jpeg" alt="Luis Fernando">
+        <p>Luis Fernando</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/MarcoAndres.jpeg" alt="Marco Andrés">
+        <p>Marco Andrés</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/Msandoval.jpeg" alt="M. Sandoval">
+        <p>M. Sandoval</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/Antonella.jpeg" alt="Antonella">
+        <p>Antonella</p>
+        <button class="vote-button">Votar</button>
+      </div>
+      <div class="candidate">
+        <img src="images/Emi.jpeg" alt="Emi">
+        <p>Emi</p>
+        <button class="vote-button">Votar</button>
+      </div>
+    </div>
+    <div id="countdown"></div>
+    
+
+  </section>
+  
+  
+
+  
+  <section id="redes-sociales" class="section-content">
+    <h2>Redes Sociales</h2>
+    <!-- Aquí puedes insertar tus enlaces a las redes sociales -->
+    <!-- Por ejemplo: -->
+    <!-- <a href="https://www.facebook.com/TU_PAGINA_DE_FACEBOOK" target="_blank"><i class="fab fa-facebook"></i></a> -->
+    <!-- <a href="https://www.instagram.com/TU_PERFIL_DE_INSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a> -->
+    <!-- <a href="https://twitter.com/TU_PERFIL_DE_TWITTER" target="_blank"><i class="fab fa-twitter"></i></a> -->
+  </section>
+  
+  <section id="motomami" class="section-content">
+    <h2>Motomami</h2>
+    <div class="video-container">
+      <!-- Código del reproductor de vídeo de YouTube centrado -->
+      <iframe width="1264" height="480" src="https://www.youtube.com/embed/EslzthDFm2w" title="ROSALÍA - MOTOMAMI (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="link-container">
+      <a href="https://www.rosalia.com" target="_blank" class="motomami-link">www.rosalia.com</a>
+    </div>
+  </section>
+  
+  <section id="votos-en-tiempo-real" class="section-content">
+    <h2>Votos en tiempo real</h2>
+    <div id="vote-records"></div>
+     </section>
+  
+  <footer>
+    <p>&copy; 2023 Ángeles</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
